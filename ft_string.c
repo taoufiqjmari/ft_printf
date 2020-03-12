@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 16:27:15 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/11 17:51:57 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 15:35:57 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,10 @@ void	string_right(char *string, int len)
 /*
 ** The second if() is for a special case
 ** ft_printf("%.s", (char *) number);
+** ---------------------------------------------
+** If there is minus flag, string is ridercted to
+** *_left() which refers to left justify,
+** otherwise string is redirected to *_right()
 */
 
 void	ft_string(char *string)

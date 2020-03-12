@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 12:42:41 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/11 12:44:06 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 15:28:02 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	s2[i] = '\0';
 	return (s2);
+}
+
+void	ft_strrev(char **str)
+{
+	int		i;
+	int		len;
+	char	*temp;
+
+	i = 0;
+	len = ft_strlen(*str);
+	temp = (char *)malloc(len + 1);
+	while (len > 0)
+		temp[i++] = (*str)[--len];
+	temp[i] = '\0';
+	free(*str);
+	*str = temp;
 }

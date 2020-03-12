@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 14:51:48 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/11 17:51:15 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 12:49:31 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	init_vars(void)
 	g_vars.precision = 0;
 	g_vars.precision_value = 0;
 	g_vars.spaces = 0;
+	g_vars.zero_adfix = 0;
 	g_vars.ret = 0;
 }
 
@@ -39,6 +40,7 @@ void	reinit_vars(void)
 	g_vars.precision = 0;
 	g_vars.precision_value = 0;
 	g_vars.spaces = 0;
+	g_vars.zero_adfix = 0;
 }
 
 /*

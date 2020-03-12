@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 22:21:35 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/11 18:09:51 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 14:06:26 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,14 @@ void	ft_zeros(void)
 	{
 		ft_putchar('0');
 		g_vars.spaces--;
+	}
+}
+
+void	ft_zeros_adfix(void)
+{
+	while (g_vars.zero_adfix > 0)
+	{
+		ft_putchar('0');
+		g_vars.zero_adfix--;
 	}
 }
