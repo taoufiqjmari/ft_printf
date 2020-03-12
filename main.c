@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 15:25:53 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/12 19:56:08 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 22:10:00 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	main(void)
 
 	i = 0;
 	p = &i;
-	// printf("   %d\n", printf("---printf: %0*.*d\n", 15, 10, -12345678));
+	printf("   %d\n", printf("---printf: %0*.*d\n", 15, 10, -12345678));
 	printf("   %d\n", ft_printf("ft_printf: %0*.*d\n", 15, 10, -12345678));
-	// system("leaks a.out");
+	system("leaks a.out");
 	return (0);
 }

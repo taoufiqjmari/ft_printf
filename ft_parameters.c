@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 15:25:23 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/12 19:54:36 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 20:34:50 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_parameters(void)
 	else if (*g_vars.str == 'd' || *g_vars.str == 'i')
 		ft_integer(va_arg(g_vars.ap, int));
 	else if (*g_vars.str == 'u')
-		ft_unsigned_int();
+		ft_unsigned_int(va_arg(g_vars.ap, int));
 	else if (*g_vars.str == 'x' || *g_vars.str == 'X')
 		ft_hexadecimal((unsigned int)va_arg(g_vars.ap, int));
 	else if (*g_vars.str == '%')

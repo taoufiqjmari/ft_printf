@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 21:34:46 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/12 15:38:45 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/12 20:54:13 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,11 @@ void	ft_putnbr(int c)
 	}
 	else
 		ft_putchar(num + 48);
+}
+
+void	ft_putnbr_uint(unsigned int num)
+{
+	if (num > 9)
+		ft_putnbr_uint(num / 10);
+	ft_putchar((num % 10 + 48));
 }
