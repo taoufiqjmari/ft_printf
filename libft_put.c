@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 21:34:46 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/12 20:54:13 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/13 15:11:29 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,7 @@ void	ft_putnbr(int c)
 
 	num = c;
 	if (num < 0)
-	{
-		num = -num;
-		ft_putchar('-');
-	}
+		num *= -1;
 	if (num > 9)
 	{
 		ft_putnbr(num / 10);
