@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 16:28:50 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/12 21:16:00 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/13 22:49:44 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ft_unsigned_int(int num)
 		g_vars.zero = 0;
 		if (g_vars.precision_value >= len)
 			g_vars.zero_adfix = g_vars.precision_value - len;
-		g_vars.spaces = (g_vars.width - (len + g_vars.zero_adfix));
+		g_vars.spaces = g_vars.width - (len + g_vars.zero_adfix);
 	}
 	else
 		g_vars.spaces = g_vars.width - len;

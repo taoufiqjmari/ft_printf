@@ -6,7 +6,7 @@
 /*   By: tjmari <tjmari@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/10 21:34:46 by tjmari            #+#    #+#             */
-/*   Updated: 2020/03/13 15:11:29 by tjmari           ###   ########.fr       */
+/*   Updated: 2020/03/13 22:50:13 by tjmari           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,10 @@ void	ft_putnbr(int c)
 
 void	ft_putnbr_uint(unsigned int num)
 {
-	if (num > 9)
-		ft_putnbr_uint(num / 10);
-	ft_putchar((num % 10 + 48));
+	long	num2;
+
+	num2 = num;
+	if (num2 > 9)
+		ft_putnbr_uint(num2 / 10);
+	ft_putchar((num2 % 10 + 48));
 }
